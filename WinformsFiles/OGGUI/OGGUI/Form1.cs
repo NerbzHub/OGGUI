@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.IO;
 
 namespace OGGUI
 {
     public partial class OGGUI : Form
     {
+
         public OGGUI()
         {
             InitializeComponent();
@@ -69,3 +72,6 @@ namespace OGGUI
         }
     }
 }
+
+// This article may help me for what I am looking at doing but I am out of time.
+// https://stackoverflow.com/questions/4107683/controlling-cmd-exe-from-winforms
