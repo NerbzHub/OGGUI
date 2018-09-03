@@ -33,6 +33,7 @@
             this.Commit = new System.Windows.Forms.Button();
             this.Push = new System.Windows.Forms.Button();
             this.runTerminal = new System.ComponentModel.BackgroundWorker();
+            this.GoToRepo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Fetch
@@ -79,11 +80,22 @@
             // 
             this.runTerminal.DoWork += new System.ComponentModel.DoWorkEventHandler(this.runTerminal_DoWork);
             // 
+            // GoToRepo
+            // 
+            this.GoToRepo.Location = new System.Drawing.Point(447, 12);
+            this.GoToRepo.Name = "GoToRepo";
+            this.GoToRepo.Size = new System.Drawing.Size(75, 23);
+            this.GoToRepo.TabIndex = 4;
+            this.GoToRepo.Text = "Go to Repo";
+            this.GoToRepo.UseVisualStyleBackColor = true;
+            this.GoToRepo.Click += new System.EventHandler(this.GoToRepo_Click);
+            // 
             // OGGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 414);
+            this.Controls.Add(this.GoToRepo);
             this.Controls.Add(this.Push);
             this.Controls.Add(this.Commit);
             this.Controls.Add(this.Pull);
@@ -102,6 +114,7 @@
         private System.Windows.Forms.Button Commit;
         private System.Windows.Forms.Button Push;
         private System.ComponentModel.BackgroundWorker runTerminal;
+        private System.Windows.Forms.Button GoToRepo;
     }
 }
 

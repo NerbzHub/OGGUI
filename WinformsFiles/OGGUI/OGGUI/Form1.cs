@@ -62,5 +62,10 @@ namespace OGGUI
         {
             System.Console.Write("git push");
         }
+
+        private void GoToRepo_Click(object sender, EventArgs e)
+        {
+            System.Console.WriteLine("cd /c/Users/s171735/Documents/OGGUI");
+        }
     }
 }
